@@ -138,7 +138,7 @@ function plugin:access(conf)
             headers = {
               ["Authorization"] = "Zoho-oauthtoken " .. token,
             },
-            ssl_verify = true,
+            ssl_verify = ssl_verify,
         })
         if not res then
             return nil, "auth info request failed: " .. (err or "unknown reason")
