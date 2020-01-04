@@ -1,4 +1,4 @@
-local private_keys_file     = '/etc/kong/private_keys.json' -- hard coded to be loaded at init_work phase
+local private_keys_file     = '/etc/kong/jwt_signer_private_keys.json' -- hard coded to be loaded at init_work phase
 
 local BasePlugin = require "kong.plugins.base_plugin"
 
@@ -221,6 +221,6 @@ function plugin:access(conf)
 end
 
 plugin.PRIORITY = 1000
-plugin.VERSION = "0.0-1"
+plugin.VERSION = "0.0-2"
 
 return plugin

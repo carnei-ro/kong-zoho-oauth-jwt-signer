@@ -1,5 +1,5 @@
 package = "kong-zoho-oauth-jwt-signer"
-version = "0.0-1"
+version = "0.0-2"
 
 source = {
  url    = "git@bitbucket.org:leandro-carneiro/kong-zoho-oauth-jwt-signer.git",
@@ -7,7 +7,7 @@ source = {
 }
 
 description = {
-  summary = "generate JWT when a google oauth flow is valid",
+  summary = "generate JWT when oauth flow is valid  ",
 }
 
 dependencies = {
